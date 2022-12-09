@@ -1,15 +1,16 @@
 const Home = () => {
   return (
     <div>
-      <header className="lists">
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-
-        <div>
-          <p>c</p>
+      <header className="header">
+        <div className="header-container">
+          <ul className="list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div className="btn-wrapper">
+          <button className="btn"></button>
         </div>
       </header>
 
