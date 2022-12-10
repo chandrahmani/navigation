@@ -1,11 +1,11 @@
-const NavList = ({ list }) => {
+const NavList = ({ item }) => {
   console.log(list);
   return (
     <>
       <section className="cot">
         <ul>
-          <li>{list.title}</li>
-          <li>{list.url}</li>
+          <li>{item.title}</li>
+          <li>{item.url}</li>
         </ul>
       </section>
     </>
