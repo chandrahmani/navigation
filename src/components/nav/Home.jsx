@@ -1,20 +1,28 @@
+import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Header, Section } from "../styled";
+
 const Home = () => {
   return (
     <div>
-      <header className="header">
+      <Header className="header">
         <div className="header-container">
           <ul className="list">
             <li>Home</li>
             <li>About</li>
             <li>Contact</li>
+
+            <NavLink to="navForm">
+              <li>NavForm</li>
+            </NavLink>
           </ul>
         </div>
         <div className="btn-wrapper">
           <button className="btn"></button>
         </div>
-      </header>
+      </Header>
 
-      <section className="section-wrapper">
+      <Section>
         <div className="txt">
           <h2>Navigation Builder</h2>
         </div>
@@ -33,7 +41,7 @@ const Home = () => {
             alt="abc"
           />
         </div>
-      </section>
+      </Section>
     </div>
   );
 };
