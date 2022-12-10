@@ -25,7 +25,10 @@ const NavForm = ({ setLists, lists }) => {
               <li>Home</li>
             </NavLink>
 
-            <li>About</li>
+            <NavLink to="/About">
+              <li>About</li>
+            </NavLink>
+
             <li>Contact</li>
             {/* 
             <NavLink to="/navForm">
