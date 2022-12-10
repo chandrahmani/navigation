@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { navLists } from "../../model";
-import NavForm from "../NavForm";
 import Home from "./Home";
+
+import NavForm from "../NavForm";
 import NavList from "./NavList";
 
 const Nav = () => {
@@ -17,8 +18,6 @@ const Nav = () => {
           <NavList list={list}></NavList>
         </div>;
       })}
-
-      {/* <Home /> */}
     </>
   );
 };
