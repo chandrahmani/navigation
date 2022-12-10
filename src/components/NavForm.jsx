@@ -1,4 +1,6 @@
 import { useForm } from "react-hook-form";
+import { NavLink } from "react-router-dom";
+import { Header, Section } from "./styled";
 
 const NavForm = ({ setLists, lists }) => {
   const {
@@ -16,30 +18,56 @@ const NavForm = ({ setLists, lists }) => {
 
   return (
     <>
-      <header className="header-wrapper">
-        <form className="form-container" onSubmit={handleSubmit(onSubmit)}>
-          <label>Title</label>
+      <Header className="header">
+        <div className="header-container">
+          <ul className="list">
+            <NavLink to="/">
+              <li>Home</li>
+            </NavLink>
 
+            <li>About</li>
+            <li>Contact</li>
+            {/* 
+            <NavLink to="/navForm">
+              <li>NavForm</li>
+            </NavLink> */}
+          </ul>
+        </div>
+        <div className="btn-wrapper">
+          <button className="btn">X</button>
+        </div>
+      </Header>
+
+      <Section>
+        <div className="txt">
+          <h2>Navigation Builder</h2>
+          <p>Add new menu here</p>
+        </div>
+        <form className="form-container" onSubmit={handleSubmit(onSubmit)}>
           <input
             type="text"
-            placeholder="enter title"
+            placeholder="Title"
             {...register("title", {
               required: true,
             })}
           />
 
-          <label>Link</label>
           <input
             type="url"
-            placeholder="enter url"
+            placeholder="URL"
             {...register("url", {
               required: true,
             })}
           />
-
-          <button>Add</button>
+          <select className="drop-don">
+            <option>Home</option>
+            <option>About</option>
+          </select>
+          <div className="button-wrap">
+            <button className="btn">Add</button>
+          </div>
         </form>
-      </header>
+      </Section>
     </>
   );
 };
