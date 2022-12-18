@@ -1,5 +1,5 @@
 const NavList = ({ item }) => {
-  console.log(list);
+  console.log(item);
   return (
     <>
       <section className="cot">

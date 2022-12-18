@@ -74,17 +74,18 @@ p{
   font-weight: 400px;
 }
 
-h3{
+h4{
   color: #097E7E;
+  font-size: 20px;
 }
 
-.btn-container{
-    position: absolute;
-    right: 104px;
-    top: 224px;
+.btn-contain{
+  position: fixed;
+  right: 102px;
+  top: 233px;
 }
 
-.btn-container button {
+.btn-contain button {
   font-weight: 500;
   background-color: #097E7E;
   color: #fff;
@@ -97,17 +98,36 @@ h3{
 
 .box{
   margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
 }
 
 .box img{
-  height: 200px;
-  width: 930px;
+  height: 240px;
+  width: 78%;
+  position: fixed;
 }
 .form-container{
   display: flex;
   flex-direction: column;
   max-width: 400px;
 }
+
+.form-wrapper{
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  margin: auto;
+}
+.form-wrapper input{
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #c3c3c3;
+  font-size: 20px;
+}
+
 .drop-don{
   padding: 0.4rem;
   border-radius: 6px;
@@ -117,8 +137,12 @@ h3{
 }
 
 .button-wrap .btn{
-  margin: 1rem;
   background: #097E7E;
   color: #fff;
   font-size: 17px;
+}
+
+.cot{
+  background-color: red;
+
 }

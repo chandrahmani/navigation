@@ -1,8 +1,11 @@
 import { useForm } from "react-hook-form";
 import { NavLink } from "react-router-dom";
+
 import { Header, Section } from "../../components/styled";
 
-const NavAdd = () => {
+const NavAdd = ({ navLists, setNavLists }) => {
+  console.log("cd", navLists);
+
   const {
     register,
     handleSubmit,
@@ -11,9 +14,11 @@ const NavAdd = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
+    console.log("lists", data);
 
-    setLists([...lists, data]);
+    setNavLists([...navLists, data]);
+
+    localStorage.setItem("data", JSON.stringify([...navLists, data]));
   };
 
   return (

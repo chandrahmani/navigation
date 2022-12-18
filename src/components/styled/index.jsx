@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  max-width: 870px;
   margin: auto;
   padding-top: 3rem;
+  position: absolute;
+  left: 159px;
 `;
 
 export const Header = styled.header`
